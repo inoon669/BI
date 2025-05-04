@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BI | אתרים פשוטים שעובדים</title>
+  <link rel="icon" type="image/png" href="logo.png">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -53,6 +54,24 @@
       text-align: center;
       font-size: 0.9em;
     }
+    .logo {
+      display: block;
+      margin: 20px auto;
+      max-width: 200px;
+    }
+    .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      color: #25D366;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .whatsapp-link img {
+      width: 20px;
+      height: 20px;
+    }
   </style>
 </head>
 <body>
@@ -66,6 +85,7 @@
 </nav>
 
 <header id="home">
+  <img src="logo.png" alt="לוגו BI" class="logo">
   <h1>BI | אתרים פשוטים שעובדים</h1>
   <p>האתר שלך לא צריך להרשים – הוא צריך למכור. אנחנו ב־BI בונים אתרי תדמית ממוקדים, ברורים ונגישים. פחות עמודים, יותר לקוחות.</p>
   <a class="button" href="#contact">דברו איתנו עכשיו</a>
@@ -97,14 +117,21 @@
 
 <section id="contact">
   <h2>צור קשר</h2>
-  <p>ינון בר 0526698059</p>
   <p>רוצה אתר פשוט שמביא תוצאות? שלח לנו פניה:</p>
-  <form action="#" method="post">
+  <form action="https://formspree.io/f/manoezbo" method="POST" data-formspree>
     <input type="text" name="name" placeholder="שם מלא" required>
     <input type="email" name="email" placeholder="דוא"ל" required>
     <textarea name="message" placeholder="איך נוכל לעזור לך?" rows="5" required></textarea>
     <button type="submit">שליחה</button>
   </form>
+  <p><strong>טלפון:</strong> <a href="tel:0526698059">052-6698059</a></p>
+  <p><strong>אימייל:</strong> <a href="mailto:inoon669@gmail.com">inoon669@gmail.com</a></p>
+  <p><strong>וואטסאפ:</strong> 
+    <a class="whatsapp-link" href="https://wa.me/972526698059" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="וואטסאפ">
+      שלחו הודעה עכשיו
+    </a>
+  </p>
 </section>
 
 <footer>
