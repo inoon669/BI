@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BI | אתרים פשוטים שמביאים תוצאות</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary-color: #007acc;
+      --secondary-color: #25D366; /* WhatsApp Green */
+      --bg-light: #f8f9fa;
+      --text-dark: #2d3436;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Assistant', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--white);
+      color: var(--text-dark);
+      line-height: 1.8;
+    }
+
+    /* תפריט ניווט דביק */
+    nav {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    header, section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header {
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .hero-p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    h2 {
+      font-size: 2em;
+      border-bottom: 3px solid var(--primary-color);
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    /* כפתורים */
+    .button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      transition: transform 0.2s, box-shadow 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0,122,204,0.4);
+    }
+
+    /* כרטיסיות שירות/FAQ */
+    .card {
+      background: var(--bg-light);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      border-right: 5px solid var(--primary-color);
+    }
+
+    /* מחירים */
+    .pricing-box {
+      background: linear-gradient(135deg, #007acc 0%, #005f99 100%);
+      color: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .price {
+      font-size: 3em;
+      font-weight: bold;
+      display: block;
+    }
+
+    /* טפסים */
+    form {
+      background: var(--bg-light);
+      padding: 30px;
+      border-radius: 15px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+
+    form button {
+      width: 100%;
+      background-color: var(--text-dark);
+      color: white;
+      margin-top: 20px;
+    }
+
+    .logo {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    footer {
+      background-color: #2d3436;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    /* התאמה לנייד */
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      nav a { margin: 0 5px; font-size: 0.9em; }
+      header, section { padding: 40px 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">ראשי</a>
+  <a href="#about">למה אנחנו?</a>
+  <a href="#pricing">מחיר</a>
+  <a href="#contact">דברו איתנו</a>
+</nav>
+
+<header id="home">
+  <img src="logo.png" alt="לוגו BI" class="logo">
+  <h1>האתר שלך צריך לעבוד בשבילך</h1>
+  <p class="hero-p">די לאתרים מסובכים ויקרים. ב-BI אנחנו בונים אתרים מדויקים, מהירים וממוקדי מכירה שיגרמו ללקוחות שלכם להשאיר פרטים.</p>
+  <a class="button" href="#contact">אני רוצה אתר כזה</a>
+</header>
+
+<section id="about">
+  <h2>למה אתר פשוט?</h2>
+  <div class="card">
+    <h3>מינימליזם זה כוח</h3>
+    <p>לקוחות היום מאבדים סבלנות תוך 3 שניות. אנחנו דואגים שהם יבינו בדיוק מה אתם מציעים ואיך יוצרים קשר – בלי הסחות דעת.</p>
+  </div>
+  <div class="card">
+    <h3>הכל כלול</h3>
+    <p>התאמה מלאה לנייד (רספונסיביות), נגישות תקנית, ומהירות טעינה מקסימלית. האתר שלכם יהיה מוכן לפרסום בגוגל ופייסבוק מהרגע הראשון.</p>
+  </div>
+</section>
+
+<section id="faq">
+  <h2>שאלות ותשובות</h2>
+  <p><strong>תוך כמה זמן האתר באוויר?</strong><br>בין 5 ל-7 ימי עבודה מרגע שיש לנו את כל התוכן.</p>
+  <p><strong>האם האתר יהיה שלי?</strong><br>בוודאי. הבעלות מלאה שלכם, כולל גישה לניהול ושינויים בעתיד.</p>
+</section>
+
+<section id="pricing">
+  <div class="pricing-box">
+    <h2>חבילת הכל-כלול</h2>
+    <p>אתר תדמית מקצועי, מעוצב ומניע לפעולה</p>
+    <span class="price">₪1,490</span>
+    <p>*מחיר השקה לזמן מוגבל*</p>
+    <a class="button" style="background-color: white; color: var(--primary-color);" href="#contact">תפסו לי מקום</a>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>בואו נצא לדרך</h2>
+  <p>השאירו פרטים ונחזור אליכם לייעוץ קצר (וללא התחייבות):</p>
+  <form action="https://formspree.io/f/manoezbo" method="POST">
+    <input type="text" name="name" placeholder="שם מלא" required>
+    <input type="tel" name="phone" placeholder="מספר טלפון" required>
+    <input type="email" name="email" placeholder="דוא"ל">
+    <textarea name="message" placeholder="ספרו לנו קצת על העסק שלכם..." rows="4" required></textarea>
+    <button type="submit" class="button">שלחו לי הצעה</button>
+  </form>
+
+  <div style="text-align: center; margin-top: 30px;">
+    <p>או דברו איתנו ישירות:</p>
+    <a href="tel:0526698059" style="text-decoration: none; color: inherit; font-weight: bold; font-size: 1.2em;">052-6698059</a><br>
+    <a class="whatsapp-link" href="https://wa.me/972526698059" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="וואטסאפ" width="20">
+      שלחו לנו הודעה בוואטסאפ
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 BI - אתרים פשוטים שעובדים | כל הזכויות שמורות</p>
+</footer>
+
+</body>
+</html>
